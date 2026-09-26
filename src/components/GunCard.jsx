@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 
-function GunCard({ gun }) {
+function GunCard({ gun, onAddToCart }) {
   const popup = useRef(null)
 
   return (
@@ -26,6 +26,9 @@ function GunCard({ gun }) {
         </p>
         <p>{gun.description}</p>
         <form method="dialog">
+          <button className="add-button" type="button" onClick={() => onAddToCart(gun)}>
+            Add to cart
+          </button>
           <button className="popup-close">Close</button>
         </form>
       </dialog>

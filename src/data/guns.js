@@ -53,6 +53,24 @@ const GUNS = [
     description:
       'The other pump gun. Twin action bars, a simple safety on the tang, and a price that leaves money for ammunition.',
   },
+  {
+    name: 'Beretta 92FS',
+    type: 'Pistol',
+    caliber: '9mm',
+    price: 749,
+    image: '/guns/beretta-92fs.svg',
+    description:
+      'A classic full-size service pistol with an open-slide design, smooth double-action trigger, and a proven 15-round magazine.',
+  },
+  {
+    name: 'Benelli M4',
+    type: 'Shotgun',
+    caliber: '12 Gauge',
+    price: 1899,
+    image: '/guns/benelli-m4.svg',
+    description:
+      'A semi-automatic shotgun built around a reliable gas system, with a comfortable stock and fast follow-up shots.',
+  },
 ]
 
 export default GUNS

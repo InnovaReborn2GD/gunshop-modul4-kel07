@@ -56,6 +56,20 @@
   border-bottom-color: var(--brass);
 }
 
+.cart-link {
+  border: 1px solid var(--ink);
+  padding: 4px 9px;
+  color: var(--ink);
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+
+.cart-link span {
+  color: var(--brass);
+  font-weight: 700;
+}
+
 .main {
   width: 100%;
   max-width: 760px;
@@ -102,6 +116,26 @@
 .count {
   color: var(--steel);
   font-size: 0.9rem;
+}
+
+.catalog-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.catalog-controls label {
+  color: var(--steel);
+  font-size: 0.9rem;
+}
+
+.catalog-controls select,
+.checkout-form input {
+  border: 1px solid var(--line);
+  padding: 8px 10px;
+  color: var(--ink);
+  background: #fff;
+  font: inherit;
 }
 
 .stock {
@@ -208,6 +242,126 @@
 .popup-close:hover {
   background: var(--ink);
   color: var(--paper);
+}
+
+.add-button,
+.checkout-button {
+  margin-top: 20px;
+  padding: 8px 18px;
+  border: 1px solid var(--brass);
+  color: #fff;
+  background: var(--brass);
+  font: inherit;
+  cursor: pointer;
+}
+
+.add-button:hover,
+.checkout-button:hover {
+  background: #805e20;
+}
+
+.checkout {
+  padding: 32px 0 0;
+  border-top: 1px solid var(--line);
+}
+
+.empty-cart,
+.order-success {
+  margin: 0;
+  padding: 18px;
+  border: 1px solid var(--line);
+  color: var(--steel);
+  background: #fff;
+}
+
+.order-success {
+  color: var(--ink);
+  border-color: var(--brass);
+}
+
+.checkout-form {
+  display: grid;
+  gap: 14px;
+}
+
+.cart-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+
+.cart-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.cart-list li div {
+  display: grid;
+}
+
+.cart-list li span {
+  color: var(--steel);
+  font-size: 0.9rem;
+}
+
+.cart-list input {
+  width: 72px;
+}
+
+.checkout-form > label {
+  display: grid;
+  gap: 4px;
+  color: var(--steel);
+  font-size: 0.9rem;
+}
+
+.checkout-form > label input {
+  width: 100%;
+}
+
+.checkout-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-top: 2px solid var(--ink);
+  font-size: 1.1rem;
+}
+
+.checkout-button {
+  justify-self: start;
+  margin-top: 0;
+}
+
+@media (max-width: 560px) {
+  .header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .list-head {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .catalog-controls {
+    width: 100%;
+  }
+
+  .catalog-controls select {
+    flex: 1;
+  }
 }
 
 .footer {
